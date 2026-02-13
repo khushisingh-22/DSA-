@@ -35,7 +35,7 @@ The goal of this repository is to build a strong foundation in algorithmic think
     ```bash
     git clone [https://github.com/khushisingh-22/Daily-DSA-Java.git](https://github.com/khushisingh-22/Daily-DSA-Java.git)
     ```
-2.  **Navigate and Run:**
+2.  *Navigate and Run:*
     ```bash
     cd arrays
     javac outputinputarray.java
