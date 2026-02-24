@@ -27,11 +27,11 @@ public class TWOSUM {
        int max = Integer.MIN_VALUE;
        int smax = Integer.MIN_VALUE;
        //calculate max value 
-       for (i=0; i<arr.length; i++){
+       for ( int i=0; i<arr.length; i++){
         if(arr[i]>max) max=arr[i];
        }
            // calculate second largest 
-       for (i=0; i<arr.length; i++){
+       for (int i=0; i<arr.length; i++){
         if(arr[i]>smax && arr[i]!=max) smax=arr[i];
        }
        System.out.println(max);
