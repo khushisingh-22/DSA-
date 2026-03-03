@@ -1,7 +1,7 @@
 public class mergetwosortedarray {
     public static void main(String[] args) {
        int[] a = {3,4,5,6,8};
-       int [] b = { 6,4,5,3};
+       int [] b = { 7,8,9};
 
        int [] c = new int [a.length+b.length];
        for(int ele : c) System.out.print(ele+" ");
@@ -15,25 +15,30 @@ public class mergetwosortedarray {
     }
 
 
-    public static void merge(int[]c,int[] a, int[] b){
-        int i =0 , j=0,k=0;
-        while( i <a.length && j <b.length ){
-            if(a[i]<b[j])
-                c[k++] = a[i++];
-              else
-                c[k++] = b[j++];
-        }
-          while(i<a.length)
-        {
-            c[k++] = a[i++];
-        }
-        while(j<b.length){
-            c[k++] = b[j++];
+   public static void merge(int[] c, int[] a, int[] b) {
+    int i = 0, j = 0, k = 0;
 
-        }
-      
-      }
+    while (i < a.length && j < b.length) {
+        if (a[i] < b[j])
+            c[k++] = a[i++];
+        else
+            c[k++] = b[j++];
     }
+
+    // agar a array khatam ho gaya
+    while (j < b.length) {
+        c[k++] = b[j++];
+    }
+
+    // agar b array khatam ho gaya
+    while (i < a.length) {
+        c[k++] = a[i++];
+    }
+}
+      
+} 
+    
+  
 
 
         
